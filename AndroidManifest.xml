@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.test.AndroidChartApp"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/in_ui_name">
+        <activity android:name=".LoginActivity"
+                  android:label="@string/in_ui_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+	<activity android:name="org.achartengine.GraphicalActivity" />
+	<activity android:name=".PieChartUI" android:label="饼状图制作" />
+	<activity android:name=".AndroidChartApp" android:label="登陆界面" />
+	<activity android:name=".LineChartUI" android:label="折线图制作"/>
+	<activity android:name=".BarChartUI" android:label="柱状图制作"/>
+	<activity android:name=".HelpChart" android:label="Android图表制作精灵帮助"/>
+	<activity android:name=".Reg" />
+	<activity android:name="com.test.paint.FingerPaint" android:label="自定义画板">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-sdk android:minSdkVersion="3" />
+        <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    
+
+</manifest> 

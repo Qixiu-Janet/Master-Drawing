@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="饼状图制作"
+			android:gravity="center_horizontal" android:textSize="25px"
+			android:textColor="#fff000" />
+
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="输入总项目名:"
+				android:gravity="left" />
+			<EditText android:layout_width="150px"
+				android:layout_height="wrap_content" android:maxLines="1"
+				android:maxLength="10" android:id="@+id/fileName" />
+		</LinearLayout>
+		
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="请输入项目名:"
+				android:gravity="left" />
+			<EditText android:layout_width="150px"
+				android:layout_height="wrap_content" android:maxLines="1"
+				android:maxLength="10" android:id="@+id/inputName" />
+		</LinearLayout>
+
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="请输入项目值:"
+				android:gravity="left" />
+			<EditText android:layout_width="150px"
+				android:layout_height="wrap_content" android:maxLines="1"
+				android:maxLength="10" android:id="@+id/inputNum" />
+
+		</LinearLayout>
+
+
+		<Button android:layout_width="wrap_content" android:id="@+id/piechart_addButton"
+			android:layout_height="wrap_content" android:text="添加" 
+			android:gravity="center" android:background="@drawable/tj"/>
+
+		<TableLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/table_list">
+			<TableRow>
+				<TextView android:text="项目名" />
+				<TextView android:text="项目值" android:paddingLeft="100px" />
+			</TableRow>
+		</TableLayout>
+
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<Button android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="生成图表"
+				android:id="@+id/piechart_createButton" 
+				android:gravity="center"
+				android:background="@drawable/selector" />
+
+			<Button android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="清除列表"
+				android:id="@+id/piechart_clearList" 
+				android:gravity="center"
+				android:background="@drawable/selector" />
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

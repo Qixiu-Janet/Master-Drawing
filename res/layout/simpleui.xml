@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:gravity="center_horizontal"
+		android:background="@drawable/login_background">
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="@string/in_ui_name"
+			android:gravity="center_horizontal" android:textSize="25px"
+			android:textColor="#ffffff" />
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:paddingTop="50dip"
+			android:orientation="vertical">
+			<Button android:id="@+id/simpleui_button1"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="饼状图制作" android:textSize="15px" android:textStyle="bold"
+				android:gravity="center" android:background="@drawable/selector1" android:textColor="#ffffff"/>
+			<Button android:id="@+id/simpleui_button2"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="折线图制作" android:textSize="15px" android:textStyle="bold"
+				android:gravity="center" android:background="@drawable/selector1" android:textColor="#ffffff"/>
+			<Button android:id="@+id/simpleui_button3"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="柱状图制作" android:textSize="15px" android:textStyle="bold"
+				android:gravity="center" android:background="@drawable/selector1" android:textColor="#ffffff"/>
+			<Button android:id="@+id/simpleui_button4"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="自定义画板" android:textSize="15px" android:textStyle="bold"
+				android:gravity="center" android:background="@drawable/selector1" android:textColor="#ffffff"/>
+			<Button android:id="@+id/simpleui_button5"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="帮            助" android:textSize="15px"
+				android:textStyle="bold" android:gravity="center"
+				android:background="@drawable/selector1" android:textColor="#ffffff"/>
+			<Button android:id="@+id/simpleui_button6"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="退           出" android:textSize="15px"
+				android:textStyle="bold" android:gravity="center"
+				android:background="@drawable/selector1" android:textColor="#ffffff"/>
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>
+
